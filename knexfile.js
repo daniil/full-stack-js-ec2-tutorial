@@ -10,7 +10,8 @@ const connections = {
   },
   production: {
     client: 'pg',
-    connection: process.env.DB_URL,
+    connectionString: process.env.DB_URL,
+    ssl: { rejectUnauthorized: false }
   },
 };
 
