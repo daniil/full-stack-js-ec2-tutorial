@@ -11,3 +11,4 @@ For full instructions please see the CDA in Synapse!
 - After creating tables run either `knex seed:run` or `npm run seed` to populate the tables with data
 - Finally you can start the project by running either `npm start` or `npm run dev`, the 2nd option will start with `nodemon`
 
+v1.0.1
