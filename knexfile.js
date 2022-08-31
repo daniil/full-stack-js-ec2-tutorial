@@ -12,7 +12,7 @@ const connections = {
     client: 'pg',
     connection: {
       connectionString: process.env.DB_URL,
-      ssl: true
+      ssl: !process.env.RAILWAY_DEPLOY
     }
   },
 };
