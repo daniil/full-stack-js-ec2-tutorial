@@ -1,13 +1,20 @@
 const connections = {
   development: {
-    client: "mysql",
+    client: 'mysql',
     connection: {
-        host: "127.0.0.1",
-        user: "root",
-        password: "rootroot",
-        database: "woodstock",
-    }
-  }
+      host: '127.0.0.1',
+      user: 'root',
+      password: 'YourRootPassword',
+      database: 'YourDatabaseName',
+    },
+  },
+  production: {
+    client: 'pg',
+    connection: process.env.DB_URL,
+  },
 };
 
-module.exports = connections.development;
+module.exports = 
+  process.env.NODE_ENV === 'production'
+    ? connections.production
+    : connections.development;
