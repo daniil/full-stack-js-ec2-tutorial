@@ -4,8 +4,8 @@ const connections = {
     connection: {
       host: '127.0.0.1',
       user: 'root',
-      password: 'YourRootPassword',
-      database: 'YourDatabaseName',
+      password: 'rootroot',
+      database: 'test_deploy',
     },
   },
   production: {
