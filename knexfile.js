@@ -14,11 +14,8 @@ const connections = {
       connectionString: process.env.DB_URL,
       ssl: true
     }
-    
   },
 };
-
-console.log(process.env.DB_URL)
 
 module.exports = 
   process.env.NODE_ENV === 'production'
