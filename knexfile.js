@@ -10,10 +10,15 @@ const connections = {
   },
   production: {
     client: 'pg',
-    connectionString: process.env.DB_URL,
-    ssl: { rejectUnauthorized: false }
+    connection: {
+      connectionString: process.env.DB_URL,
+      ssl: true
+    }
+    
   },
 };
+
+console.log(process.env.DB_URL)
 
 module.exports = 
   process.env.NODE_ENV === 'production'
