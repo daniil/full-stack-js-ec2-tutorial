@@ -9,10 +9,12 @@ const connections = {
     },
   },
   production: {
-    client: 'pg',
+    client: 'mysql',
     connection: {
-      connectionString: process.env.DB_URL,
-      ssl: !process.env.RAILWAY_DEPLOY
+      host: '127.0.0.1',
+      user: process.env.DB_USER,
+      password: process.env.DB_PASSWORD,
+      database: process.env.DB_DATABASE,
     }
   },
 };
