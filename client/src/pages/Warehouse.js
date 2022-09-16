@@ -18,7 +18,7 @@ const Warehouse = () => {
 
   return (
     <div className="App">
-      <h1>Warehouses</h1>
+      <h1>🛖 Warehouses</h1>
       {!warehouses.length ? (
         <DonutSpinner />
       ) : (

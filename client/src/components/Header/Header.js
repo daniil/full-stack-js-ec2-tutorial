@@ -1,9 +1,11 @@
 import { NavLink } from "react-router-dom";
+import logoImg from '../../assets/logo.jpeg';
 import "./Header.scss";
 
 function Header() {
   return (
     <header className="header">
+      <img src={logoImg} height="100" alt="Warehouse Loog"/>
       <nav className="header__nav">
         <NavLink
           to="/"
