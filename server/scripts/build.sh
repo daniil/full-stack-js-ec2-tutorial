@@ -1,1 +1,1 @@
-npm install && npm run migrate && npm run seed
+git pull && npm install && npm run migrate && npm run seed
