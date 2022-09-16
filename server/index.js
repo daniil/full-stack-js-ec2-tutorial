@@ -7,7 +7,7 @@ app.use(express.json());
 const warehouseRoutes = require('./routes/warehouseRoute');
 const inventoryRoutes = require('./routes/inventoryRoute');
 
-app.get('/', (_req, res) => {
+app.get('/api', (_req, res) => {
   res.send("Welcome to my API");
 });
 app.use('/warehouses', warehouseRoutes);
