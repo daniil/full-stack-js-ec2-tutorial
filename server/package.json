@@ -2,7 +2,7 @@
   "name": "cda-knex-table-migrations-solution",
   "version": "1.0.0",
   "scripts": {
-    "start": "pm2 start index.js",
+    "start": "pm2 start index.js -f",
     "dev": "npx nodemon index.js",
     "migrate": "knex migrate:latest",
     "migrate:down": "knex migrate:down",
